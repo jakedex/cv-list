@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>cvList - browse resumes from top applicants</title>
+
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/main.css">
+  </head>
+  <body>
+    <!--[if lt IE 10]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <div class="top">
+        <div class="container">
+          <div class="header">
+                <ul class="nav nav-pills pull-right">
+                  <li><a href="#">Getting started</a></li>
+                  <li><a href="#">The List</a></li>
+                  <li><a href="#">Submit</a></li>
+                  <li class="active"><a href="#">Log in</a></li>
+                </ul>
+            <img src="images/logo.png" alt="" id="logo">
+          </div>
+        </div>
+        
+        <div class="container">
+            <div class="jumbo row">
+                <div class="col-lg-6">
+                    <h1 class="jumboText">Compare resumes from the top CS graduates.</h1>
+                    <a href="#" id="actionBtn" class="center-block">Start browsing resumes</a>
+                </div>
+                <div class="col-lg-6">
+                    <div class="cvStack">
+                        <img src="images/cvDrawing.png" id="drawing1" class="center-block">
+                        <img src="images/cvDrawing.png" id="drawing2">
+                        <img src="images/cvDrawing.png" id="drawing3">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='//www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-XXXXX-X');ga('send','pageview');
+    </script>
+
+      
+    <script src="scripts/jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+    <script src="scripts/main.js"></script>
+
+</body>
+</html>
