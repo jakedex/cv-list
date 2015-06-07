@@ -1,0 +1,87 @@
+.top {
+    height: 650px;
+    
+    background-color: #F4D163;
+}
+
+.header {
+    margin-top: 35px;
+}
+
+.jumbo {
+    
+}
+
+#logo {
+    pointer-events: none;
+    height: 14%;
+    width: 14%;
+}
+
+/* nav */
+.nav a {
+    color: white;
+}
+
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
+    background-color: #1897DE;
+}
+
+/* jumbo */
+.cvStack {
+/*    pointer-events: none;*/
+    position: relative;
+    display: block;
+    margin-top: 10%;
+}
+
+#drawing1 {
+    display: block;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 9;
+}
+
+#drawing2 {
+    position: absolute;
+    top: -2%;
+    left: 16.5%;
+    z-index: 8;
+}
+
+#drawing3 {
+    position: absolute;
+    top: -4%;
+    left: 19%;
+    z-index: 7;
+}
+
+.jumboText {
+    margin-top: 20%;
+    position: relative;
+    
+    text-align: center;
+    font-size: 3.5em;
+    line-height: 1.3em;
+}
+
+#actionBtn {
+    display: block;
+    height: 43px;
+    width: 210px;
+    
+    margin-top: 7%;
+    
+    background: #DB3E3F;
+    border-radius: 3px;
+    font-size: 16px;
+    text-align: center;
+    color: white;
+    line-height: 43px;
+}
+
+#actionBtn:hover {
+    text-decoration: none;
+    background-color: #CD443F;
+}
