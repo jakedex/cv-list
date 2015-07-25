@@ -1,63 +1,125 @@
 <!doctype html>
 <html lang="">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>cvList - browse resumes from top applicants</title>
 
-    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.96.1/css/materialize.min.css">
     <link rel="stylesheet" href="styles/main.css">
-  </head>
-  <body>
+</head>
+
+<body>
     <!--[if lt IE 10]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-    <div class="top">
-        <div class="container">
-          <div class="header">
-                <ul class="nav nav-pills pull-right">
-                  <li><a href="#">Getting started</a></li>
-                  <li><a href="#">The List</a></li>
-                  <li><a href="#">Submit</a></li>
-                  <li class="active"><a href="#">Log in</a></li>
-                </ul>
-            <img src="images/logo.png" alt="" id="logo">
-          </div>
+    <section id="one">
+        
+
+
+        <div class="jumboNav">
+            <img src="images/logo.png" alt="" id="logo" class="">
+            <ul class="">
+                <li><a href="#">Getting started</a>
+                </li>
+                <li><a href="#">The List</a>
+                </li>
+                <li><a href="#">Submit</a>
+                </li>
+                <li><a href="#" class="btn-flat waves-effect blue">Log in</a>
+                </li>
+            </ul>
         </div>
         
-        <div class="container">
-            <div class="jumbo row">
-                <div class="col-lg-6">
-                    <h1 class="jumboText">Compare resumes from the top CS graduates.</h1>
-                    <a href="#" id="actionBtn" class="center-block">Start browsing resumes</a>
+        <div class="navbar-fixed">
+            <nav class="grey fixedNav" role="navigation">
+                <div class="nav-wrapper container">
+                    <a id="logo-container" href="#" class="brand-logo"><img src="images/logo.png" alt="" id="navLogo">
+                    </a>
+                    <ul class="right hide-on-med-and-down">
+                        <li><a href="#">Navbar Link</a>
+                        </li>
+                    </ul>
+
+                    <ul id="nav-mobile" class="side-nav">
+                        <li><a href="#">Navbar Link</a>
+                        </li>
+                    </ul>
+                    <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
                 </div>
-                <div class="col-lg-6">
+            </nav>
+        </div>
+
+        <div class="container">
+
+
+            <div class="jumbo row">
+                <div class="col m6">
+                    <h1 class="jumboText">Compare resumes from the top CS graduates.</h1>
+                    <div class="row center">
+                        <a href="" class="btn-large waves-effect waves-light red">Start browsing resumes</a>
+                    </div>
+                </div>
+                <div class="col m6">
                     <div class="cvStack">
-                        <img src="images/cvDrawing.png" id="drawing1" class="center-block">
-                        <img src="images/cvDrawing.png" id="drawing2">
-                        <img src="images/cvDrawing.png" id="drawing3">
+                        <img src="images/cvDrawing.png" id="drawing1" class="responsive-img">
+                        <img src="images/cvDrawing.png" id="drawing2" class="responsive-img">
+                        <img src="images/cvDrawing.png" id="drawing3" class="responsive-img">
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
+
+    <section id="two">
+        <div class="container">
+            <div class="row">
+                <div class="col m7">
+                    <h3>Support the best</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="three">
+        <div class="container">
+            <div class="row">
+                <div class="col m7">
+                    <h3>Support the best</h3>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
-      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-      e.src='//www.google-analytics.com/analytics.js';
-      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-      ga('create','UA-XXXXX-X');ga('send','pageview');
+        (function (b, o, i, l, e, r) {
+            b.GoogleAnalyticsObject = l;
+            b[l] || (b[l] =
+                function () {
+                    (b[l].q = b[l].q || []).push(arguments)
+                });
+            b[l].l = +new Date;
+            e = o.createElement(i);
+            r = o.getElementsByTagName(i)[0];
+            e.src = '//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e, r)
+        }(window, document, 'script', 'ga'));
+        ga('create', 'UA-XXXXX-X');
+        ga('send', 'pageview');
     </script>
 
-      
+
     <script src="scripts/jquery.min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/ScrollMagic.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/animation.gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.96.1/js/materialize.min.js"></script>
     <script src="scripts/main.js"></script>
 
 </body>
+
 </html>
